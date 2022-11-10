@@ -1,0 +1,6 @@
+/*Outra forma é escrevendo o css em um arquivo serapademente*/
+h1 {
+  color: rgb(13, 235, 109);
+  text-align: right;
+  font-size: 16px;
+}

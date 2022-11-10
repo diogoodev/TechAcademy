@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.title {
+  font-size: xx-large;
+  color: blueviolet;
+}
+div .title {
+  font-size: 10px;
+}
+div > h2 {
+  font-size: 90px;
+  background-color: blue;
+}
+*[title] {
+  color: crimson;
+}
+h2:hover {
+  color: aqua;
+}
+*[title='title'] {
+  color: blanchedalmond;
+}
+a:hover {
+  background-color: aqua;
+  color: #000;
+}
+a:visited {
+  color: blueviolet;
+}

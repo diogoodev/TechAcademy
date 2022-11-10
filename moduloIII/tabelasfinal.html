@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Continunado o estudo sobre tabelas em html-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas 2</title>
+    <!--Utilizando a tag style para estilizar o projeto de tabela -->
+    <style>
+      table {
+        text-align: left;
+        width: 500px;
+        border-collapse: collapse;
+        border-spacing: 25px 15px;
+        /*Usando a propriedade collapse Muito importa para modificar as linhas da tabela  deixa com um visual mais comum, retirando a borda dupla*/
+        /* border-collapse: separate;
+
+        /* Usando  border-collapse: separate; temos uma outra forma de visualização de dados da tabela podendo ser interessante quando temos algum dado que queremos da destaque */
+        border: 2px solid black;
+        margin: auto;
+        empty-cells: hide;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      thead {
+        color: black;
+        background-color: lightgray;
+      }
+      tfoot {
+        color: black;
+        background-color: lightgray;
+      }
+      tr,
+      td,
+      th {
+        border: 2px solid black;
+        padding: 3px 10px 1px 10px;
+      }
+      caption {
+        caption-side: bottom;
+        color: gray;
+        font-size: 12px;
+      }
+      #endereco {
+        text-align: center;
+      }
+      tbody tr:nth-child(even) {
+        background-color: lightgreen;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: rgb(82, 240, 82);
+      }
+      tbody tr:hover {
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        Relação de clientes da empresa X
+      </caption>
+      <!--A tag thead é muito importante na construçao de uma tabela e serve para destacar os elemntos que estarão na tabela-->
+      <thead>
+        <tr>
+          <!--Ao utilizamos os atributos rowspan e colspan temos como resultado a opção de campos pelos elementos, lembrar sempre de colocar imediatmente depois o elemento que tera o espaço ocupado-->
+          <th rowspan="2">Nome</th>
+          <!--Por enxemplo no caso do do conteudo telone, ocuprá duas linhas ecaixando assim no layout pretendido-->
+          <th rowspan="2">Telefone</th>
+          <!-- Já usando o colspan com o valo 4, tmeo que o condeudo endereço ocupara o espaço de 4 coteudos-->
+          <th colspan="4" id="endereco">Endereço</th>
+        </tr>
+        <tr>
+          <!-- Como esses elemento serão preenchidos na tabela eles precisam ficar na thead e imediatamende apos a tr anterior pois nela contas os rownspan que serão ocupados aqui-->
+          <th>Rua</th>
+          <th>Numero</th>
+          <th>Cidade</th>
+          <th>Cep</th>
+        </tr>
+      </thead>
+      <!-- Utilizamos a tag tbody para destacar sematicamente  o corpo de uma tabela em html-->
+      <tbody>
+        <tr>
+          <td>Diogo</td>
+          <td>91992385256</td>
+          <td>Floriano Peixoto</td>
+          <td>1680</td>
+          <td>CASTANHAL</td>
+          <td>68743030</td>
+        </tr>
+        <tr>
+          <td>Diogo</td>
+          <td>91992385256</td>
+          <td>Floriano Peixoto</td>
+          <td>1680</td>
+          <td>CASTANHAL</td>
+          <td>68743030</td>
+        </tr>
+        <tr>
+          <td>Diogo</td>
+          <td>91992385256</td>
+          <td>Floriano Peixoto</td>
+          <td>1680</td>
+          <td>CASTANHAL</td>
+          <td>68743030</td>
+        </tr>
+        <tr>
+          <td>Diogo</td>
+          <td>91992385256</td>
+          <td>Floriano Peixoto</td>
+          <td>1680</td>
+          <td>CASTANHAL</td>
+          <td>68743030</td>
+        </tr>
+        <tr>
+          <td>Diogo</td>
+          <td>91992385256</td>
+          <td>Floriano Peixoto</td>
+          <td>1680</td>
+          <td></td>
+          <td>68743030</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">Para maiores informções entre em contato conosco</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
